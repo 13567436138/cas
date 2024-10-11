@@ -302,7 +302,11 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-jdbc-drivers"
     implementation "org.apereo.cas:cas-server-support-jpa-service-registry"
     implementation "org.apereo.cas:cas-server-support-redis-service-registry"
+    
     implementation "org.apereo.cas:cas-server-support-mongo-service-registry"
+    implementation 'org.apereo.cas:cas-server-support-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    
     implementation "org.apereo.cas:cas-server-support-yaml-service-registry"
     implementation 'org.apereo.cas:cas-server-support-ldap'
     implementation 'org.springframework.boot:spring-boot-starter-data-ldap'
