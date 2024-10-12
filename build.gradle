@@ -297,17 +297,11 @@ dependencies {
      **/
     implementation "org.apereo.cas:cas-server-support-rest"
 
-    implementation "org.apereo.cas:cas-server-support-json-service-registry"
-    implementation "org.apereo.cas:cas-server-support-jdbc"
-    implementation "org.apereo.cas:cas-server-support-jdbc-drivers"
-    implementation "org.apereo.cas:cas-server-support-jpa-service-registry"
-    implementation "org.apereo.cas:cas-server-support-redis-service-registry"
+
     
     implementation "org.apereo.cas:cas-server-support-mongo-service-registry"
     implementation "org.apereo.cas:cas-server-support-mongo"
     
-    implementation "org.apereo.cas:cas-server-support-yaml-service-registry"
-    implementation "org.apereo.cas:cas-server-support-ldap"
 
     
     testImplementation "org.springframework.boot:spring-boot-starter-test"
