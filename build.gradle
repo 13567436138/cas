@@ -303,6 +303,7 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-jpa-service-registry"
     implementation "org.apereo.cas:cas-server-support-json-service-registry"
     
+    implementation "org.apereo.cas:cas-server-support-oauth"
     implementation "org.apereo.cas:cas-server-support-oauth-services"
 
     
