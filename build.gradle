@@ -298,9 +298,9 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-rest"
 
 
-    
-    implementation "org.apereo.cas:cas-server-support-mongo-service-registry"
-    implementation "org.apereo.cas:cas-server-support-mongo"
+    implementation "org.apereo.cas:cas-server-support-jdbc"
+    implementation "org.apereo.cas:cas-server-support-jdbc-drivers"
+    implementation "org.apereo.cas:cas-server-support-jpa-service-registry"
     
 
     
