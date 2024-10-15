@@ -47,4 +47,7 @@ EXPOSE 8080 8443
 ENV PATH $PATH:$JAVA_HOME/bin:.
 
 WORKDIR cas-overlay
+
+RUN rm -rf cas/lib/cas-server-support-webconfig-7.2.0-RC1.jar
+COPY cas-server-support-webconfig-7.2.0-SNAPSHOT.jar cas/lib/
 ENTRYPOINT ["java", "-server", "-noverify", "-Xmx2048M", "-XX:SharedArchiveFile=cas/cas.jsa", "-jar", "cas/cas.war"]
