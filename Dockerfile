@@ -9,7 +9,7 @@ RUN mkdir -p cas-overlay
 COPY ./src cas-overlay/src/
 COPY ./gradle/ cas-overlay/gradle/
 COPY ./gradlew ./settings.gradle ./build.gradle ./gradle.properties ./lombok.config /cas-overlay/
-COPY cas-server-support-thymeleaf-7.2.0-SNAPSHOT.jar /cas-overlay/cas
+COPY cas-server-support-thymeleaf-7.2.0-SNAPSHOT.jar /cas-overlay/cas/
 
 RUN mkdir -p ~/.gradle \
     && echo "org.gradle.daemon=false" >> ~/.gradle/gradle.properties \
