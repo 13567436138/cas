@@ -9,7 +9,6 @@ RUN mkdir -p cas-overlay
 COPY ./src cas-overlay/src/
 COPY ./gradle/ cas-overlay/gradle/
 COPY ./gradlew ./settings.gradle ./build.gradle ./gradle.properties ./lombok.config /cas-overlay/
-COPY cas-server-support-thymeleaf-7.2.0-SNAPSHOT.jar /cas-overlay/cas/
 
 RUN mkdir -p ~/.gradle \
     && echo "org.gradle.daemon=false" >> ~/.gradle/gradle.properties \
@@ -42,7 +41,8 @@ COPY etc/cas/ /etc/cas/
 COPY etc/cas/config/ /etc/cas/config/
 #COPY etc/cas/services/ /etc/cas/services/
 #COPY etc/cas/saml/ /etc/cas/saml/
-RUN mv /cas-overlay/cas/cas-server-support-thymeleaf-7.2.0-SNAPSHOT.jar /cas-overlay/cas/lib&& rm -rf /cas-overlay/cas/lib/cas-server-support-thymeleaf-7.2.0-RC1.jar
+COPY  cas-server-support-thymeleaf-7.2.0-SNAPSHOT.jar /cas-overlay/cas/lib/
+RUN  rm -rf /cas-overlay/cas/lib/cas-server-support-thymeleaf-7.2.0-RC1.jar
 
 
 EXPOSE 8080 8443
